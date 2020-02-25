@@ -22,6 +22,8 @@ RUN cd .. \
   && shopt -s globstar \
   && rm -rf **/*.{map,lock,log,md,yml}
 
+COPY open.js /yapi/vendors/server/controllers/
+
 ######## 镜像 ########
 FROM node:alpine
 
